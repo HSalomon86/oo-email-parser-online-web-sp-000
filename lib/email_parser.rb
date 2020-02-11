@@ -9,6 +9,7 @@ attr_accessor :email
 
   def initialize(emails)
     @email = emails.split(/[,\s]+/)
+    @email.uniq 
   end
   def parse
     @email
