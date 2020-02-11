@@ -8,7 +8,7 @@ attr_accessor :email
   @email = []
 
   def initialize(emails)
-    @email = emails.split(/,\s/)
+    @email = emails.split(/[,\s]+/)
   end
   def parse
     @email
